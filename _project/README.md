@@ -54,6 +54,7 @@
 - 確定判断: [03_strategy/confirmed-decisions-2026-04-12.md](./03_strategy/confirmed-decisions-2026-04-12.md)
 - 追加回答原本: [02_research/questions/refresh-plan-v1-answer.md](./02_research/questions/refresh-plan-v1-answer.md)
 - デザイン方針: [05_design/design-approach.md](./05_design/design-approach.md)
+- クライアント報告用サイト構成: [07_delivery/handoff/site-structure-final-v1-for-hideko.md](./07_delivery/handoff/site-structure-final-v1-for-hideko.md)
 - 実装置き場: [06_build/site/README.md](./06_build/site/README.md)
 
 ## 原本の現在地
