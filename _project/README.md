@@ -51,6 +51,8 @@
 - 必要スキル: [00_admin/codex-skills.md](./00_admin/codex-skills.md)
 - 現在の整理状況: [00_admin/workspace-inventory.md](./00_admin/workspace-inventory.md)
 - 事前戦略メモ: [03_strategy/refresh-plan-v1.md](./03_strategy/refresh-plan-v1.md)
+- 確定判断: [03_strategy/confirmed-decisions-2026-04-12.md](./03_strategy/confirmed-decisions-2026-04-12.md)
+- 追加回答原本: [02_research/questions/refresh-plan-v1-answer.md](./02_research/questions/refresh-plan-v1-answer.md)
 - 実装置き場: [06_build/site/README.md](./06_build/site/README.md)
 
 ## 原本の現在地
