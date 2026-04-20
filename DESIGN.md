@@ -437,16 +437,18 @@
 - 実装都合でトンマナを均質なテンプレートに落とさない
 - 更新性を理由に、固定すべきブランド表現まで可変にしない
 
-## 16. この v1 の次に作るもの
+## 16. ここからの推奨順序
 
-1. トップ / 個人向け / 法人向けの構成ラフ
-2. 優先度 A ページの主要コピー初稿
-3. 使用写真の候補整理と不足カットの洗い出し
-4. 実装前の簡易ワイヤー
+1. 実装着手前の最終整理
+2. `06_build/site` での実装開始
 
 ## 17. 参照すべきファイル
 
 - [_project/03_strategy/confirmed-decisions-2026-04-20.md](./_project/03_strategy/confirmed-decisions-2026-04-20.md)
 - [_project/07_delivery/handoff/site-structure-final-v1-for-hideko.md](./_project/07_delivery/handoff/site-structure-final-v1-for-hideko.md)
+- [_project/04_content/priority-a-core-page-structure-rough.md](./_project/04_content/priority-a-core-page-structure-rough.md)
+- [_project/04_content/priority-a-core-page-copy-draft.md](./_project/04_content/priority-a-core-page-copy-draft.md)
+- [_project/05_design/priority-a-photo-asset-audit.md](./_project/05_design/priority-a-photo-asset-audit.md)
+- [_project/05_design/priority-a-simple-wireframes.md](./_project/05_design/priority-a-simple-wireframes.md)
 - [_project/05_design/design-approach.md](./_project/05_design/design-approach.md)
 - [_project/05_design/next-session-design-brief.md](./_project/05_design/next-session-design-brief.md)
