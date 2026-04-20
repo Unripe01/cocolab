@@ -52,6 +52,7 @@
 - 優先度Aページ主要コピー初稿: [04_content/priority-a-core-page-copy-draft.md](./04_content/priority-a-core-page-copy-draft.md)
 - 優先度Aページ写真監査: [05_design/priority-a-photo-asset-audit.md](./05_design/priority-a-photo-asset-audit.md)
 - 優先度Aページ簡易ワイヤー: [05_design/priority-a-simple-wireframes.md](./05_design/priority-a-simple-wireframes.md)
+- 優先度A静的プロトタイプ: [06_build/site/index.html](./06_build/site/index.html)
 - `DESIGN.md v1` 作成時の brief: [05_design/next-session-design-brief.md](./05_design/next-session-design-brief.md)
 - セッション前提: [00_admin/session-operating-model.md](./00_admin/session-operating-model.md)
 - 必要スキル: [00_admin/codex-skills.md](./00_admin/codex-skills.md)
@@ -79,5 +80,5 @@
 
 ## ここからの基本順序
 
-1. 実装方針を整理する
-2. `06_build/site` で実装を始める
+1. 優先度 A プロトタイプを見直す
+2. 残りページと詳細導線の実装に広げる
