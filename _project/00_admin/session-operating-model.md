@@ -68,13 +68,14 @@
 - 課題整理メモ作成
 - サイトマップと導線の確定
 - `DESIGN.md v1` の作成
+- 優先度 A の主要3ページ構成ラフ作成
+- 優先度 A の主要3ページ主要コピー初稿作成
+- 優先度 A の写真候補整理と不足素材洗い出し
+- 優先度 A の簡易ワイヤー作成
 
 未完了:
 
 - 本人確認が必要な意思決定
-- 優先度 A ページの構成ラフ
-- 主要コピー初稿
-- 写真候補と不足素材の整理
 - 実装着手
 
 ## 次の実務上の基準
@@ -82,18 +83,19 @@
 サイト構成への確認回答は取り込み済みで、`DESIGN.md v1` も作成済みです。  
 この時点の最短ルートは、次の順序です。
 
-1. トップ / 個人向け / 法人向けの構成ラフ作成
-2. 優先度 A ページの主要コピー整理
-3. 写真候補と不足素材の洗い出し
-4. 実装方針整理
-5. 実装開始
+1. 実装方針整理
+2. 実装開始
 
 ## デザイン作業再開時の入口
 
-デザイン作業を再開する場合は、まず次の2ファイルから読む。
+デザイン作業を再開する場合は、まず次の6ファイルから読む。
 
 1. [../../DESIGN.md](../../DESIGN.md)
-2. [../05_design/next-session-design-brief.md](../05_design/next-session-design-brief.md)
+2. [../04_content/priority-a-core-page-structure-rough.md](../04_content/priority-a-core-page-structure-rough.md)
+3. [../04_content/priority-a-core-page-copy-draft.md](../04_content/priority-a-core-page-copy-draft.md)
+4. [../05_design/priority-a-photo-asset-audit.md](../05_design/priority-a-photo-asset-audit.md)
+5. [../05_design/priority-a-simple-wireframes.md](../05_design/priority-a-simple-wireframes.md)
+6. [../05_design/next-session-design-brief.md](../05_design/next-session-design-brief.md)
 
 ## ドキュメント運用ルール
 
