@@ -47,6 +47,8 @@
 
 ## いま見ればよいファイル
 
+- 次セッションの入口: [../DESIGN.md](../DESIGN.md)
+- 次セッション用 brief: [05_design/next-session-design-brief.md](./05_design/next-session-design-brief.md)
 - セッション前提: [00_admin/session-operating-model.md](./00_admin/session-operating-model.md)
 - 必要スキル: [00_admin/codex-skills.md](./00_admin/codex-skills.md)
 - 現在の整理状況: [00_admin/workspace-inventory.md](./00_admin/workspace-inventory.md)
@@ -76,6 +78,7 @@
 1. 追加ヒアリング回答の反映
 2. ブランド階層の確定
 3. サイトマップと導線の確定
-4. ページ原稿作成
-5. デザイン方針整理
-6. `06_build/site` で実装開始
+4. `DESIGN.md v1` の確定
+5. ページ構成ラフと主要コピー作成
+6. 実装方針整理
+7. `06_build/site` で実装開始
