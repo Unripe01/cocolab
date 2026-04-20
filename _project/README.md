@@ -47,8 +47,8 @@
 
 ## いま見ればよいファイル
 
-- 次セッションの入口: [../DESIGN.md](../DESIGN.md)
-- 次セッション用 brief: [05_design/next-session-design-brief.md](./05_design/next-session-design-brief.md)
+- デザイン方針の正本: [../DESIGN.md](../DESIGN.md)
+- `DESIGN.md v1` 作成時の brief: [05_design/next-session-design-brief.md](./05_design/next-session-design-brief.md)
 - セッション前提: [00_admin/session-operating-model.md](./00_admin/session-operating-model.md)
 - 必要スキル: [00_admin/codex-skills.md](./00_admin/codex-skills.md)
 - 現在の整理状況: [00_admin/workspace-inventory.md](./00_admin/workspace-inventory.md)
@@ -73,12 +73,10 @@
 - 過去販促物: `01_source_materials/legacy-promotions`
 - 生成済み草案: `01_source_materials/generated-drafts`
 
-## この後の基本順序
+## ここからの基本順序
 
-1. 追加ヒアリング回答の反映
-2. ブランド階層の確定
-3. サイトマップと導線の確定
-4. `DESIGN.md v1` の確定
-5. ページ構成ラフと主要コピー作成
-6. 実装方針整理
-7. `06_build/site` で実装開始
+1. `DESIGN.md v1` を基準に優先度 A ページの構成ラフを作る
+2. 主要コピー初稿を作る
+3. 写真候補と不足素材を整理する
+4. 実装方針を整理する
+5. `06_build/site` で実装を始める
