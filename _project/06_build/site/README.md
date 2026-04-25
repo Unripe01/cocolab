@@ -12,13 +12,23 @@
 
 ## 現在の実装状態
 
-現時点では、優先度 A の 3 ページを静的プロトタイプとして実装開始しています。
+現時点では、優先度 A の 3 ページを起点に、サイト全体を静的マルチページとして拡張しています。
 
 実装済み:
 
 - `index.html`
 - `personal.html`
 - `corporate.html`
+- `about.html`
+- `concept.html`
+- `salon.html`
+- `diagnosis.html`
+- `consultation.html`
+- `methods.html`
+- `results.html`
+- `faq.html`
+- `column.html`
+- `contact.html`
 - `styles.css`
 - `script.js`
 - `assets/` 配下の初期画像
@@ -45,7 +55,8 @@
 
 - 優先度 A プロトタイプの見直し
 - 必要ならフリー素材の追加差し替え
-- 残りページや詳細導線の実装
+- 各ページの文言精度調整
+- 将来のフォーム接続や CMS 更新導線の検討
 
 ## ファイル構成
 
@@ -55,6 +66,26 @@
   - 個人向けトップ
 - `corporate.html`
   - 法人向けトップ
+- `about.html`
+  - プロフィールページ
+- `concept.html`
+  - じぶん整え習慣の考え方
+- `salon.html`
+  - じぶん整え習慣サロン案内
+- `diagnosis.html`
+  - 無料診断案内
+- `consultation.html`
+  - 無料相談 / 個別相談案内
+- `methods.html`
+  - カラーココロジー研究所 / 方法論
+- `results.html`
+  - 実績・お客様の声
+- `faq.html`
+  - よくある質問
+- `column.html`
+  - コラム / お知らせ
+- `contact.html`
+  - お問い合わせ
 - `styles.css`
   - 共通スタイル
 - `script.js`

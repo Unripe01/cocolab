@@ -437,6 +437,8 @@ p {
 .card-grid,
 .pillar-grid,
 .menu-grid,
+.metric-grid,
+.info-grid,
 .proof-grid,
 .footer-grid {
   display: grid;
@@ -461,10 +463,19 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.metric-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.info-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .route-card,
 .value-card,
 .pillar-card,
 .menu-card,
+.metric-card,
 .proof-card,
 .cta-card,
 .mini-panel {
@@ -476,6 +487,7 @@ p {
 .value-card p,
 .pillar-card p,
 .menu-card p,
+.metric-card p,
 .proof-card p,
 .mini-panel p,
 .cta-card p {
@@ -486,12 +498,20 @@ p {
 .value-card,
 .pillar-card,
 .menu-card,
+.metric-card,
 .proof-card,
 .mini-panel {
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.78);
+}
+
+.metric-value {
+  color: var(--teal);
+  font-family: "Shippori Mincho", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
 }
 
 .route-card .button-row,
@@ -636,6 +656,48 @@ p {
   gap: 24px;
 }
 
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 20px 24px;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p,
+.faq-item ul {
+  padding: 0 24px 22px;
+}
+
+.faq-item[open] summary {
+  color: var(--teal);
+}
+
+.contact-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .cta-split .footer-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -733,6 +795,8 @@ p {
   .card-grid,
   .pillar-grid,
   .menu-grid,
+  .metric-grid,
+  .info-grid,
   .proof-grid,
   .cta-split .footer-grid {
     grid-template-columns: 1fr;
@@ -776,6 +840,7 @@ p {
   .value-card,
   .pillar-card,
   .menu-card,
+  .metric-card,
   .proof-card,
   .mini-panel,
   .page-banner-card {
