@@ -115,15 +115,13 @@ button {
 }
 
 .brand img {
-  width: 150px;
-  max-width: 34vw;
+  width: 230px;
+  max-width: 44vw;
   object-fit: contain;
 }
 
 .brand-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  display: none;
 }
 
 .brand-title {
@@ -722,7 +720,7 @@ p {
 }
 
 .footer-brand img {
-  width: 180px;
+  width: 240px;
 }
 
 .footer-links {
@@ -825,11 +823,7 @@ p {
   }
 
   .brand img {
-    width: 128px;
-  }
-
-  .brand-copy {
-    display: none;
+    width: 188px;
   }
 
   .hero {
