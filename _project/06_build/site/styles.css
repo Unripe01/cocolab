@@ -111,6 +111,7 @@ button {
   display: flex;
   align-items: center;
   gap: 14px;
+  flex: 0 0 auto;
   min-width: 0;
 }
 
@@ -141,7 +142,10 @@ button {
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
   gap: 10px;
+  min-width: 0;
 }
 
 .site-nav a {
@@ -149,6 +153,7 @@ button {
   border-radius: 999px;
   color: var(--muted);
   font-size: 0.94rem;
+  white-space: nowrap;
   transition: background-color 160ms ease, color 160ms ease;
 }
 
@@ -162,7 +167,13 @@ button {
 .header-actions {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
   gap: 12px;
+}
+
+.header-actions .btn {
+  min-width: 118px;
+  white-space: nowrap;
 }
 
 .menu-toggle {
