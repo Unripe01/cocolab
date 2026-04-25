@@ -473,7 +473,7 @@ p {
 }
 
 .metric-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .info-grid {
@@ -516,11 +516,24 @@ p {
   background: rgba(255, 255, 255, 0.78);
 }
 
-.metric-value {
+.metric-card {
+  align-content: start;
+}
+
+.metric-value,
+.metric-label {
   color: var(--teal);
   font-family: "Shippori Mincho", serif;
+}
+
+.metric-value {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
+}
+
+.metric-label {
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.45;
 }
 
 .route-card .button-row,
