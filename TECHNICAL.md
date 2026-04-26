@@ -96,6 +96,15 @@ _project/06_build/site/
     logo-horizontal-v2.png
     profile.jpg
     salon-flyer.jpg
+    generated/
+      visual-balance-color-wellness.png
+      icon-mind-calm.png
+      icon-body-care.png
+      icon-daily-habit.png
+      01_icons-corporate-wellbeing-stresscare.png
+      02_icons-corporate-wellbeing-communication.png
+      03_icons-corporate-wellbeing-workplacehealth.png
+      04_icons-corporate-wellbeing-habitbuilding.png
 ```
 
 ### ファイルごとの責務
@@ -663,6 +672,14 @@ HTTP(S) の外部リンク:
 | `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
 | `assets/profile.jpg` | `2048 x 3071` | プロフィール・人物写真 | プロフィール写真由来 |
 | `assets/salon-flyer.jpg` | `1414 x 2000` | サロン案内チラシ | BtoCチラシ由来 |
+| `assets/generated/visual-balance-color-wellness.png` | `1920 x 1080` | トップページヒーロー背景 | 薄い背景補助として使用 |
+| `assets/generated/icon-mind-calm.png` | `600 x 600` | 心を整える価値カード | 透過PNG |
+| `assets/generated/icon-body-care.png` | `600 x 600` | 体を整える価値カード | 透過PNG |
+| `assets/generated/icon-daily-habit.png` | `600 x 600` | 習慣を整える価値カード | 透過PNG |
+| `assets/generated/01_icons-corporate-wellbeing-stresscare.png` | `384 x 430` | 法人向けストレスケア補助アイコン | 原本から分割 |
+| `assets/generated/02_icons-corporate-wellbeing-communication.png` | `384 x 430` | 法人向けコミュニケーション補助アイコン | 原本から分割 |
+| `assets/generated/03_icons-corporate-wellbeing-workplacehealth.png` | `384 x 430` | 法人向け職場の健康補助アイコン | 原本から分割 |
+| `assets/generated/04_icons-corporate-wellbeing-habitbuilding.png` | `384 x 430` | 法人向け習慣づくり補助アイコン | 原本から分割 |
 
 ### アセット運用ルール
 
