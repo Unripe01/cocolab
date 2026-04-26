@@ -11,7 +11,7 @@
 - 新しく共有された未整理資料は、ルート直下の `新規共有ファイル/` に一旦入れる
 - 既存原本は、ルート直下から `_project/01_source_materials/` へ分類移動済み
 - 整理資料、戦略資料、原稿、実装コードは `_project/` 配下に集約する
-- ルート直下は `README.md`、`_project/`、`新規共有ファイル/` を入口とする最小構成に保つ
+- ルート直下は `README.md`、`DESIGN.md`、`TECHNICAL.md`、`_project/`、`新規共有ファイル/` を入口とする最小構成に保つ
 
 ## ドキュメント同期ルール
 
@@ -48,6 +48,7 @@
 ## いま見ればよいファイル
 
 - デザイン方針の正本: [../DESIGN.md](../DESIGN.md)
+- 技術仕様の正本: [../TECHNICAL.md](../TECHNICAL.md)
 - 優先度Aページ構成ラフ: [04_content/priority-a-core-page-structure-rough.md](./04_content/priority-a-core-page-structure-rough.md)
 - 優先度Aページ主要コピー初稿: [04_content/priority-a-core-page-copy-draft.md](./04_content/priority-a-core-page-copy-draft.md)
 - 優先度Aページ写真監査: [05_design/priority-a-photo-asset-audit.md](./05_design/priority-a-photo-asset-audit.md)
