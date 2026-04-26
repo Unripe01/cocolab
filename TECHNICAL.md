@@ -206,7 +206,6 @@ _project/06_build/site/
     </a>
     <nav class="site-nav" data-site-nav>...</nav>
     <div class="header-actions">
-      <a class="btn btn-soft" href="./contact.html">お問い合わせ</a>
       <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-menu-toggle>メ</button>
     </div>
   </div>
@@ -218,7 +217,7 @@ _project/06_build/site/
 - `aria-current="page"` は現在ページのナビゲーションリンク1つだけに付ける。
 - 現在ページがヘッダーのグローバルナビにない場合は、フッター内の該当リンク1つに `aria-current="page"` を付ける。
 - `data-site-nav` と `data-menu-toggle` は `script.js` と連動しているため削除しない。
-- ヘッダー右側の問い合わせCTAは常に `./contact.html` にする。
+- ヘッダー内の「お問い合わせ」はグローバルナビの1つだけにし、右側CTAとして重複表示しない。
 - グローバルナビ項目を変更する場合は、全HTMLページを同時に更新する。
 
 ### フッターの契約

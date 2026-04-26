@@ -171,11 +171,6 @@ button {
   gap: 12px;
 }
 
-.header-actions .btn {
-  min-width: 118px;
-  white-space: nowrap;
-}
-
 .menu-toggle {
   display: none;
   align-items: center;
@@ -827,10 +822,6 @@ p {
 
   .menu-toggle {
     display: inline-flex;
-  }
-
-  .header-actions .btn {
-    display: none;
   }
 
   .hero-grid,
