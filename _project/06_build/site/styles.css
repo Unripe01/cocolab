@@ -576,6 +576,26 @@ p {
   gap: 16px;
 }
 
+.space-top-xs {
+  margin-top: 12px;
+}
+
+.space-top-sm {
+  margin-top: 14px;
+}
+
+.space-top-md {
+  margin-top: 18px;
+}
+
+.space-top-lg {
+  margin-top: 24px;
+}
+
+.space-top-xl {
+  margin-top: 28px;
+}
+
 .section-band {
   padding: clamp(28px, 4vw, 38px);
   border: 1px solid rgba(168, 79, 89, 0.15);
@@ -753,6 +773,11 @@ p {
   justify-content: flex-end;
   gap: 14px;
   color: var(--muted);
+}
+
+.footer-links a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .reveal {
