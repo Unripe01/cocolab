@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法人向けサービス | Color Co-ology Laboratory</title>
+    <meta name="description" content="法人・団体様向けの研修、メンタルヘルス対策、カラーコンサルティングのご案内。組織の課題に合わせたプログラムをご提案します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        'coco-primary': '#027f24',
+                        'coco-accent': '#e37a93',
+                        'coco-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .color-blur-bg {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 0% 100%, hsla(220, 50%, 95%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(200, 50%, 90%, 0.5) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="text-slate-700 color-blur-bg font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-slate-800 tracking-wider hidden sm:block">
+                            Color Co-ology<span class="text-xs block font-normal text-slate-500">カラーココロジー研究所</span>
+                        </span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</a>
+                    <a href="profile.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">プロフィール</a>
+                    <a href="method.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">メソッド</a>
+                    <a href="course.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">講座案内</a>
+                    <a href="corporate.html" class="text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">法人向け</a>
+                    <a href="voice.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">お客様の声</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20 sm:pt-40">
+        <!-- Page Title -->
+        <div class="text-center mb-16 px-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">法人向けサービス</h1>
+            <p class="text-indigo-600 font-medium tracking-wide">For Corporate</p>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto rounded-full mt-6"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <p class="text-center text-lg text-slate-600 mb-20 leading-loose">
+                従業員のメンタルヘルス対策、コミュニケーション活性化、<br>
+                色彩心理を用いたマーケティング・商品開発支援など、<br>
+                貴社の課題解決を「色とこころ」の視点からサポートします。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🏢</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">企業研修・講演</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        ストレスマネジメント、アサーション、チームビルディングなど、体験型の研修プログラムを提供します。
+                    </p>
+                    <ul class="text-sm list-disc pl-5 text-slate-500 space-y-1">
+                        <li>コミュニケーション研修</li>
+                        <li>ハラスメント防止研修</li>
+                        <li>リーダーシップ研修</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">メンタルヘルス支援</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        色彩心理カウンセラーによる個別相談や、組織のストレスチェック後のフォローアップを行います。
+                    </p>
+                    <ul class="text-sm list-disc pl-5 text-slate-500 space-y-1">
+                        <li>個別カウンセリング</li>
+                        <li>復職支援プログラム</li>
+                        <li>相談窓口の設置</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">カラーコンサルティング</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        店舗やオフィスの環境色彩設計、商品パッケージの色彩戦略など、ビジネスにおける色の活用を助言します。
+                    </p>
+                    <ul class="text-sm list-disc pl-5 text-slate-500 space-y-1">
+                        <li>オフィス環境改善</li>
+                        <li>商品カラー戦略</li>
+                        <li>CI・ロゴカラー提案</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-24 bg-slate-50 rounded-3xl p-10 text-center border border-slate-200">
+                <h3 class="text-2xl font-bold text-slate-800 mb-4">お問い合わせ</h3>
+                <p class="text-slate-600 mb-8">
+                    研修の内容や費用、導入事例など、お気軽にお問い合わせください。<br>
+                    貴社のニーズに合わせた最適なプランをご提案いたします。
+                </p>
+                <a href="mailto:info@co-co-lab.com" class="inline-flex items-center px-8 py-4 bg-indigo-600 text-white rounded-full font-bold hover:bg-indigo-700 transition-colors shadow-lg">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    お問い合わせはこちら
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-slate-500 text-sm">
+                &copy; Color Co-ology Laboratory. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

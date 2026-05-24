@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>講座案内 | Color Co-ology Laboratory</title>
+    <meta name="description" content="色彩心理を専門的に学ぶための講座案内。プロを目指すアドバイザー養成講座から、手軽に学べるオンライン講座まで。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        'coco-primary': '#027f24',
+                        'coco-accent': '#e37a93',
+                        'coco-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .color-blur-bg {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 80% 0%, hsla(180, 50%, 90%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 0% 50%, hsla(280, 50%, 90%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 80% 100%, hsla(339, 50%, 90%, 0.5) 0, transparent 50%),
+                radial-gradient(at 0% 0%, hsla(200, 50%, 95%, 0.5) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="text-slate-700 color-blur-bg font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-slate-800 tracking-wider hidden sm:block">
+                            Color Co-ology<span class="text-xs block font-normal text-slate-500">カラーココロジー研究所</span>
+                        </span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</a>
+                    <a href="profile.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">プロフィール</a>
+                    <a href="method.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">メソッド</a>
+                    <a href="course.html" class="text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">講座案内</a>
+                    <a href="corporate.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">法人向け</a>
+                    <a href="voice.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">お客様の声</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20 sm:pt-40">
+        <!-- Page Title -->
+        <div class="text-center mb-16 px-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">講座案内</h1>
+            <p class="text-indigo-600 font-medium tracking-wide">Courses</p>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto rounded-full mt-6"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 gap-16">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:w-2/5 relative min-h-[300px]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-100 to-purple-200 flex items-center justify-center">
+                            <span class="text-6xl">🎓</span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 p-8 sm:p-12 flex flex-col justify-center">
+                        <div class="text-sm font-bold text-indigo-500 uppercase tracking-wide mb-2">認定資格</div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-4">色彩心理アドバイザー養成講座</h2>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            色彩心理の基礎理論からカウンセリングの実践スキルまでを体系的に学びます。<br>
+                            自分自身のケアはもちろん、身近な人やクライアントの心のケアができるようになるための<br>
+                            専門的な知識と技術を習得します。
+                        </p>
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center text-sm text-slate-500">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                初心者からプロを目指す方まで
+                            </div>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                動画講座とオンライン・セッションで自分のペースで受講可能
+                            </div>
+                        </div>
+                        <div>
+                            <button class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none transition-colors">
+                                詳しく見る
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-slate-500 text-sm">
+                &copy; Color Co-ology Laboratory. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

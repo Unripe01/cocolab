@@ -12,6 +12,7 @@
 - 既存原本は、ルート直下から `_project/01_source_materials/` へ分類移動済み
 - 整理資料、戦略資料、原稿、実装コードは `_project/` 配下に集約する
 - ルート直下は `README.md`、`DESIGN.md`、`TECHNICAL.md`、`_project/`、`新規共有ファイル/` を入口とする最小構成に保つ
+- 例外として、既存サイトの保全バックアップは `08_backup/lolipopbackup/` に残す
 
 ## ドキュメント同期ルール
 
@@ -45,6 +46,12 @@
 - `07_delivery`
   - プレビュー、納品、引き渡し物
 
+## ルート直下の補助フォルダ
+
+- `../08_backup/lolipopbackup`
+  - 既存サイトの保全コピー
+  - 新サイト実装の正本ではなく、比較、参照、移行漏れ確認用として扱う
+
 ## いま見ればよいファイル
 
 - デザイン方針の正本: [../DESIGN.md](../DESIGN.md)
@@ -66,6 +73,7 @@
 - デザイン方針: [05_design/design-approach.md](./05_design/design-approach.md)
 - クライアント報告用サイト構成: [07_delivery/handoff/site-structure-final-v1-for-hideko.md](./07_delivery/handoff/site-structure-final-v1-for-hideko.md)
 - 実装置き場: [06_build/site/README.md](./06_build/site/README.md)
+- 既存サイトバックアップ: [../08_backup/lolipopbackup/index.html](../08_backup/lolipopbackup/index.html)
 
 ## 原本の現在地
 

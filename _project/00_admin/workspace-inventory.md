@@ -3,7 +3,8 @@
 ## 現状
 
 原本の大半は、ルート直下から `_project/01_source_materials/` へ移動済みです。  
-現在のルート直下は、原則として `README.md`、`DESIGN.md`、`_project/`、`新規共有ファイル/` を入口にする構成へ整理されました。
+現在のルート直下は、原則として `README.md`、`DESIGN.md`、`TECHNICAL.md`、`_project/`、`新規共有ファイル/` を入口にする構成へ整理されました。  
+例外として、既存サイトの保全バックアップを `08_backup/lolipopbackup/` に配置しています。
 
 ## 新規共有ファイルの一次置き場
 
@@ -80,14 +81,28 @@
 - `_project/01_source_materials/generated-drafts/【GPT】肩書を活かしたキャッチコピー案.docx`
 - `_project/03_strategy/archive/takemura-homepage-refresh-plan.md`
 
+### 既存サイトバックアップ
+
+- `08_backup/lolipopbackup/index.html`
+- `08_backup/lolipopbackup/welcome.html`
+- `08_backup/lolipopbackup/course.html`
+- `08_backup/lolipopbackup/corporate.html`
+- `08_backup/lolipopbackup/method.html`
+- `08_backup/lolipopbackup/profile.html`
+- `08_backup/lolipopbackup/voice.html`
+- `08_backup/lolipopbackup/assets/images/`
+
+このバックアップは、新サイト実装の正本ではありません。既存サイトの確認、比較、移行漏れチェック用として扱います。
+
 ## 運用ルール
 
 ### ルート直下
 
-- `README.md`、`DESIGN.md`、`_project/`、`新規共有ファイル/` を入口として残す
+- `README.md`、`DESIGN.md`、`TECHNICAL.md`、`_project/`、`新規共有ファイル/` を入口として残す
 - 原本は置かない
 - 新規成果物も原則置かない
 - 例外として `DESIGN.md` は、デザイン方針を実装前に固定する制御ドキュメントとしてルートに置く
+- 例外として `08_backup/` は、既存サイトの保全バックアップとしてルートに置く
 - 共有直後の未整理ファイルのみ `新規共有ファイル/` に一旦置く
 
 ### `_project/01_source_materials`
@@ -134,4 +149,5 @@
 - 共有直後の新規資料は `新規共有ファイル` を一次受け口にする
 - 戦略と原稿は `_project` 配下で更新する
 - 実装コードは `06_build/site` に固定する
+- 既存サイトの参照は `08_backup/lolipopbackup` を見る
 - ルート直下には新しい単発資料を置かない

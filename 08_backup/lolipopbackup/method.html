@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メソッド | Color Co-ology Laboratory</title>
+    <meta name="description" content="カラーココロジー研究所の独自メソッド「コミュニケア」について。共感・共働・共育の3つの柱で、組織と個人の健全な成長を支援します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        'coco-primary': '#027f24',
+                        'coco-accent': '#e37a93',
+                        'coco-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .color-blur-bg {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,0) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,0) 0, transparent 50%);
+            background-image: 
+                radial-gradient(at 20% 20%, hsla(200, 60%, 90%, 0.4) 0, transparent 50%), 
+                radial-gradient(at 80% 20%, hsla(280, 60%, 90%, 0.4) 0, transparent 50%), 
+                radial-gradient(at 50% 80%, hsla(100, 60%, 90%, 0.4) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="text-slate-700 color-blur-bg font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-slate-800 tracking-wider hidden sm:block">
+                            Color Co-ology<span class="text-xs block font-normal text-slate-500">カラーココロジー研究所</span>
+                        </span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</a>
+                    <a href="profile.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">プロフィール</a>
+                    <a href="method.html" class="text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">メソッド</a>
+                    <a href="course.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">講座案内</a>
+                    <a href="corporate.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">法人向け</a>
+                    <a href="voice.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">お客様の声</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20 sm:pt-40">
+        <!-- Page Title -->
+        <div class="text-center mb-16 px-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">コミュニケアメソッド</h1>
+            <p class="text-indigo-600 font-medium tracking-wide">Community Care Method</p>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto rounded-full mt-6"></div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 text-center">
+            <p class="text-lg text-slate-600 leading-loose">
+                「コミュニケア」とは、<span class="font-bold text-indigo-600">Community（共同体）</span>と<span class="font-bold text-pink-500">Care（ケア）</span>を組み合わせた造語です。<br>
+                個人の心の健康と、組織やコミュニティの健全な発展は、切り離して考えることはできません。<br>
+                私たちは、色彩心理学をベースにした独自のアプローチで、<br>
+                「個」と「場」の両方に働きかけ、持続可能なウェルビーイングを実現します。
+            </p>
+        </div>
+
+        <!-- 3 Pillars Detail -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section 1: Kyoukan -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+                <div class="w-full md:w-1/2">
+                    <div class="bg-pink-50 rounded-3xl p-10 h-full border border-pink-100 relative overflow-hidden group hover:shadow-lg transition-shadow">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-pink-200 rounded-bl-full opacity-20 -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                        <div class="text-5xl mb-6">🤝</div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4">1. 共感 <span class="text-base font-normal text-slate-500 ml-2">Empathy</span></h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            すべての始まりは「共感」です。<br>
+                            相手の感情や立場を理解し、寄り添うことで、心理的な安全性が生まれます。
+                            色彩を用いたワークショップでは、言葉にしにくい感情を色で表現することで、
+                            深いレベルでの相互理解を促進します。
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 pl-0 md:pl-10">
+                    <h3 class="text-xl font-bold text-slate-700 mb-4">なぜ「共感」が必要なのか？</h3>
+                    <ul class="space-y-4 text-slate-600 list-disc list-outside pl-5">
+                        <li>孤独感を解消し、所属意識を高めるため</li>
+                        <li>信頼関係の土台を築くため</li>
+                        <li>多様な価値観を受け入れる柔軟性を育むため</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 2: Kyoudou -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24">
+                <div class="w-full md:w-1/2">
+                    <div class="bg-blue-50 rounded-3xl p-10 h-full border border-blue-100 relative overflow-hidden group hover:shadow-lg transition-shadow">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-200 rounded-bl-full opacity-20 -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                        <div class="text-5xl mb-6">🧩</div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4">2. 共働 <span class="text-base font-normal text-slate-500 ml-2">Co-working</span></h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            共感し合える仲間と共に働く「共働」。<br>
+                            単なる分業ではなく、互いの強みを活かし合い、弱みを補い合う関係性です。
+                            一人ひとりが自分の色（個性）を発揮しながら、一つの絵を描くように
+                            協調してゴールを目指します。
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 pr-0 md:pr-10">
+                    <h3 class="text-xl font-bold text-slate-700 mb-4">「共働」がもたらす効果</h3>
+                    <ul class="space-y-4 text-slate-600 list-disc list-outside pl-5">
+                        <li>チーム全体のパフォーマンス向上</li>
+                        <li>創造的なアイデアの創出（イノベーション）</li>
+                        <li>働きがいとモチベーションの維持</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3: Kyouiku -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+                <div class="w-full md:w-1/2">
+                    <div class="bg-yellow-50 rounded-3xl p-10 h-full border border-yellow-100 relative overflow-hidden group hover:shadow-lg transition-shadow">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-200 rounded-bl-full opacity-20 -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                        <div class="text-5xl mb-6">🌱</div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4">3. 共育 <span class="text-base font-normal text-slate-500 ml-2">Co-education</span></h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            最後は、共に育ち合う「共育」です。<br>
+                            私たちは、教える側と教えられる側という固定的な関係を超えて、
+                            互いに学び合い、成長し続ける循環を作ります。
+                            失敗も成功も共有し、次へのステップとして活かしていく姿勢です。
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 pl-0 md:pl-10">
+                    <h3 class="text-xl font-bold text-slate-700 mb-4">持続可能な成長のために</h3>
+                    <ul class="space-y-4 text-slate-600 list-disc list-outside pl-5">
+                        <li>自律的なキャリア形成の支援</li>
+                        <li>次世代リーダーの育成</li>
+                        <li>変化に強いしなやかなマインドセットの醸成</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-slate-500 text-sm">
+                &copy; Color Co-ology Laboratory. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

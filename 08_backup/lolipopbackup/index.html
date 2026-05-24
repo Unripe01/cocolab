@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Co-ology Laboratory | カラーココロジー研究所</title>
+    <meta name="description" content="色彩心理カウンセリングを通じて、ストレスにつぶれない人を増やす。大阪を拠点に活動するカラーココロジー研究所の公式サイトです。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        'coco-primary': '#027f24', // Example green from existing site log
+                        'coco-accent': '#e37a93', // Example pink
+                        'coco-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Color Blur Gradient Background */
+        .color-blur-bg {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            /* Adjusted for a softer look based on 'Color Ecology' - replacing darks with lights */
+            background-image: 
+                radial-gradient(at 10% 10%, hsla(180, 50%, 90%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 90% 10%, hsla(280, 50%, 90%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 50% 50%, hsla(50, 50%, 95%, 0.5) 0, transparent 50%),
+                radial-gradient(at 10% 90%, hsla(340, 50%, 90%, 0.5) 0, transparent 50%), 
+                radial-gradient(at 90% 90%, hsla(200, 50%, 90%, 0.5) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-700 color-blur-bg font-sans leading-relaxed">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm" id="header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+                        <span class="text-2xl font-bold text-slate-800 tracking-wider">
+                            Color Co-ology<span class="text-xs block font-normal text-slate-500">カラーココロジー研究所</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</a>
+                    <a href="profile.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">プロフィール</a>
+                    <a href="method.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">メソッド</a>
+                    <a href="course.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">講座案内</a>
+                    <a href="corporate.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">法人向け</a>
+                    <a href="voice.html" class="text-slate-600 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">お客様の声</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white/95 backdrop-blur-md absolute w-full border-b border-gray-200" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">ホーム</a>
+                <a href="profile.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">プロフィール</a>
+                <a href="method.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">メソッド</a>
+                <a href="course.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">講座案内</a>
+                <a href="corporate.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">法人向け</a>
+                <a href="voice.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50">お客様の声</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-[-1]">
+            <img src="assets/images/hero_bg.jpg" alt="Hero Background" class="w-full h-full object-cover opacity-20 blur-sm">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-8 fade-in-up" style="animation-delay: 0.2s;">
+                <span class="block text-indigo-600 mb-2 text-xl sm:text-2xl font-medium">色彩心理で、</span>
+                ストレスにつぶれない私へ。
+            </h1>
+            
+            <p class="mt-4 max-w-2xl text-xl text-slate-600 mb-10 fade-in-up" style="animation-delay: 0.4s;">
+                「自分のことは、わかっているようでわかっていない」<br>
+                色が教えてくれる本当の自分に気づき、<br>
+                もっと自由に、しなやかに生きるための「心のセルフケア」
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 fade-in-up" style="animation-delay: 0.6s;">
+                <a href="method.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    コミュニケアとは？
+                </a>
+                <a href="course.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-indigo-600 bg-white hover:bg-slate-50 md:py-4 md:text-lg md:px-10 shadow-md hover:shadow-lg transition-all border-indigo-100">
+                    講座を探す
+                </a>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-30 pointer-events-none -z-10">
+                <div class="absolute top-0 left-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+                <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style="animation-delay: 2s"></div>
+                <div class="absolute -bottom-8 left-20 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style="animation-delay: 4s"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 Pillars Section -->
+    <section class="py-24 bg-white/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">大切にしている3つの「共」</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+                <p class="mt-4 text-lg text-slate-600">
+                    私たちが活動の根幹として掲げている理念です。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl">
+                        🤝
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-slate-800 mb-4">【共感】</h3>
+                    <p class="text-slate-600 text-center leading-relaxed">
+                        共に喜び、感動することで信頼を築きます。<br>
+                        心の奥底にある感情を共有し、一人ではないという安心感を生み出します。
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl">
+                        🧩
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-slate-800 mb-4">【共働】</h3>
+                    <p class="text-slate-600 text-center leading-relaxed">
+                        共感し合える仲間と働き、やりがいや関係性を深めます。<br>
+                        個性を活かし合い、協力することで、より大きな価値を創造します。
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl">
+                        🌱
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-slate-800 mb-4">【共育】</h3>
+                    <p class="text-slate-600 text-center leading-relaxed">
+                        共に学び合い、育む姿勢で自己成長と気づきを広げます。<br>
+                        教える・教えられる関係を超えて、互いに高め合う場を作ります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Info / Course Preview -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">最新情報 & ピックアップ</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-lg mx-auto">
+                <!-- Course Card 1 -->
+                <div class="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full border border-slate-100">
+                    <div class="aspect-video bg-slate-200 w-full object-cover relative overflow-hidden">
+                        <!-- Placeholder for Image -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-pink-100 to-purple-100 flex items-center justify-center text-slate-400">
+                            <span class="text-sm">Image: 講座イメージ</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-bold text-indigo-500 uppercase tracking-wide mb-2">おすすめ講座</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-indigo-600 transition-colors">
+                            <a href="course.html">色彩心理アドバイザー養成講座</a>
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                            色の意味を深く学び、自分や周りの人の心をケアするスキルを身につけます。プロを目指す方にも。
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 flex justify-end">
+                            <span class="text-indigo-600 text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center">
+                                詳細を見る 
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Color Co-ology</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        色彩心理カウンセリングを通じて、<br>ストレスにつぶれない人を増やす。<br>
+                        大阪・関西を中心に活動中。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-4">Menu</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="index.html" class="hover:text-indigo-600 transition-colors">ホーム</a></li>
+                        <li><a href="profile.html" class="hover:text-indigo-600 transition-colors">プロフィール</a></li>
+                        <li><a href="method.html" class="hover:text-indigo-600 transition-colors">メソッド</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><a href="course.html" class="hover:text-indigo-600 transition-colors">講座案内</a></li>
+                        <li><a href="corporate.html" class="hover:text-indigo-600 transition-colors">法人向け</a></li>
+                        <li><a href="voice.html" class="hover:text-indigo-600 transition-colors">お客様の声</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>
+                            <a href="mailto:info@co-co-lab.com" class="inline-flex items-center hover:text-indigo-600 transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                info@co-co-lab.com
+                            </a>
+                        </li>
+                        <!-- Add SNS icons here if available -->
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-200 pt-8 text-center">
+                <p class="text-xs text-slate-400">&copy; Color Co-ology Laboratory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector("#mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+    
+    <!-- Blob Animation CSS (Tailwind config extension in head doesn't support keyframes well inline, adding here) -->
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+    </style>
+</body>
+</html>
