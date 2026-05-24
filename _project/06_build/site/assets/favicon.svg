@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="カラーココロジー研究所">
+  <rect width="64" height="64" rx="14" fill="#fffaf4" />
+  <rect x="3" y="3" width="58" height="58" rx="12" fill="none" stroke="#355d63" stroke-width="4" />
+  <path d="M32 47V21" fill="none" stroke="#355d63" stroke-width="4" stroke-linecap="round" />
+  <path d="M30 31C20 19 11 20 9 32c8 4 15 3 21-1Z" fill="#7a8f77" />
+  <path d="M34 31c10-12 19-11 21 1-8 4-15 3-21-1Z" fill="#a84f59" />
+  <circle cx="32" cy="20" r="6" fill="#d8b57a" />
+</svg>

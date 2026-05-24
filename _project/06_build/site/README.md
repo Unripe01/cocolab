@@ -18,6 +18,7 @@
 - `styles.css`
 - `script.js`
 - `assets/` 配下の画像アセット
+- `assets/favicon.svg`
 
 ## 現在のページ構成
 

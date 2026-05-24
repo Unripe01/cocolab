@@ -94,6 +94,7 @@ _project/06_build/site/
   styles.css
   script.js
   assets/
+    favicon.svg
     logo-horizontal.jpg
     logo-horizontal-v2.png
     profile.jpg
@@ -662,6 +663,7 @@ HTTP(S) の外部リンク:
 
 | アセット | サイズ | 用途 | メモ |
 | --- | ---: | --- | --- |
+| `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | 既存トーンに合わせたSVG favicon |
 | `assets/logo-horizontal-v2.png` | `1959 x 803` | ヘッダー / フッターロゴ | 優先ロゴ |
 | `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
 | `assets/profile.jpg` | `2048 x 3071` | プロフィール・人物写真 | プロフィール写真由来 |
@@ -795,7 +797,6 @@ FIXME
 
 本番公開前に追加または判断する。
 
-- favicon
 - canonical URL
 - OGPタグ
 - `og:image`
