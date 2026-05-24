@@ -2,104 +2,80 @@
 
 ここが、最終的なホームページ実装コードの配置先です。
 
-## 想定する中身
-
-- フロントエンドアプリ
-- 画像 / public アセット
-- ページ実装
-- スタイル
-- 必要な設定ファイル
-
 ## 現在の実装状態
 
-現時点では、優先度 A の 3 ページを起点に、サイト全体を静的マルチページとして拡張しています。
+`新規共有ファイル/totonoe/カラーココロジー研究所_制作指示書.docx` の指示を反映し、サイト構成を6ページに整理しています。
 
 実装済み:
 
 - `index.html`
+- `about.html`
 - `personal.html`
 - `corporate.html`
+- `faq.html`
+- `contact.html`
+- `totonoe/`
+- `styles.css`
+- `script.js`
+- `assets/` 配下の画像アセット
+
+## 現在のページ構成
+
+- `index.html`
+  - ホーム。個人向け / 法人向けの入口と、無料診断・お問い合わせへの導線
 - `about.html`
+  - 竹村英子について。プロフィール、色彩心理コミュニケア、6つの生活習慣、資格、実績
+- `personal.html`
+  - 個人の方へ。じぶん整え習慣サロン、無料診断、無料健康相談への導線
+- `corporate.html`
+  - 法人・団体の方へ。研修課題、選ばれる理由、研修メニュー、導入事例
+- `faq.html`
+  - よくある質問。個人向け / 法人向けのFAQ
+- `contact.html`
+  - お問い合わせ。Googleフォームとメールへの導線
+- `totonoe/index.html`
+  - じぶん整え習慣サロンLP
+
+## 削除済みページ
+
+制作指示書に従い、以下のページは個別ページとしては持たず、内容を6ページ内へ統合しています。
+
+- `methods.html`
 - `concept.html`
 - `salon.html`
 - `diagnosis.html`
 - `consultation.html`
-- `methods.html`
 - `results.html`
-- `faq.html`
 - `column.html`
-- `contact.html`
-- `styles.css`
-- `script.js`
-- `assets/` 配下の初期画像
+
+## 外部リンク
+
+- じぶん整え診断: `https://forms.gle/RboAhF8n61gNSqCeA`
+- 60分無料健康相談: `https://forms.gle/tAn8GP7ET8DDqXhD8`
+- お問い合わせフォーム: `https://forms.gle/LTE2N4r41x3UzN3E8`
+
+## LP配置
+
+じぶん整え習慣サロンLPは `totonoe/` に配置しています。
+本サイトからは次の2箇所で `./totonoe/` へリンクしています。
+
+- `personal.html` の「サロンの詳細を見る」ボタン
+- `faq.html` の Q2「詳しくはこちら」
 
 ## 使っている素材方針
 
-- あるものは既存素材をそのまま使う
-- 不足写真は、後からフリー素材へ差し替え可能な構成にしている
-- 現在は、本人写真と既存ロゴ、BtoCチラシを初期実装に反映済み
-- 現時点の優先度 A プロトタイプでは、既存素材だけで成立するように組んでいる
-
-## すでに反映済みの前提
-
-- ブランド主語
-- サイトマップ
-- 主要ページの役割
-- `DESIGN.md v1`
-- `TECHNICAL.md v1`
-- トップ / 個人向け / 法人向けの構成ラフ
-- 優先度 A ページの主要コピー初稿
-- 写真候補と不足素材の整理
-- 優先度 A ページの簡易ワイヤー
-
-## 次にやること
-
-- 優先度 A プロトタイプの見直し
-- 必要ならフリー素材の追加差し替え
-- 各ページの文言精度調整
-- 将来のフォーム接続や CMS 更新導線の検討
-- 公開前チェック項目はルートの `TECHNICAL.md` を参照
-
-## ファイル構成
-
-- `index.html`
-  - トップページ
-- `personal.html`
-  - 個人向けトップ
-- `corporate.html`
-  - 法人向けトップ
-- `about.html`
-  - プロフィールページ
-- `concept.html`
-  - じぶん整え習慣の考え方
-- `salon.html`
-  - じぶん整え習慣サロン案内
-- `diagnosis.html`
-  - 無料診断案内
-- `consultation.html`
-  - 無料相談 / 個別相談案内
-- `methods.html`
-  - カラーココロジー研究所 / 方法論
-- `results.html`
-  - 実績・お客様の声
-- `faq.html`
-  - よくある質問
-- `column.html`
-  - コラム / お知らせ
-- `contact.html`
-  - お問い合わせ
-- `styles.css`
-  - 共通スタイル
-- `script.js`
-  - モバイルメニューなどの最小JS
-- `assets/`
-  - 初期画像アセット
+- 既存素材を優先して使う
+- 本人写真と既存ロゴを初期実装に反映済み
+- LP本体とLP用画像は `totonoe/` 配下に配置済み
 
 ## プレビュー方法
 
-依存なしで確認できます。  
+依存なしで確認できます。
+
 例:
 
 1. `cd _project/06_build/site`
 2. `python3 -m http.server 4173`
 3. ブラウザで `http://127.0.0.1:4173`
+
+補足: PowerShell では `python3`、Git Bash では `python` でも可。

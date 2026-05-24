@@ -59,6 +59,8 @@ cd _project/06_build/site
 python3 -m http.server 4173
 ```
 
+この環境では、PowerShell では `python3` を使う。Git Bash では `python` でも可。
+
 ブラウザで開く。
 
 ```text
@@ -77,18 +79,18 @@ HTMLファイルを直接開く確認は、軽い本文確認に限る。リン�
 ```text
 _project/06_build/site/
   index.html
+  about.html
   personal.html
   corporate.html
-  about.html
-  concept.html
-  salon.html
-  diagnosis.html
-  consultation.html
-  methods.html
-  results.html
   faq.html
-  column.html
   contact.html
+  totonoe/
+    index.html
+    card_photo.jpg
+    hideko_face.jpg
+    hideko_halfbody.jpg
+    qr_shindan.png
+    qr_soudan.png
   styles.css
   script.js
   assets/
@@ -138,19 +140,13 @@ _project/06_build/site/
 
 | ページ | URL | 主な役割 | 主CTA | 補助CTA |
 | --- | --- | --- | --- | --- |
-| `index.html` | `/` | 竹村英子さんが何者かを伝え、個人向け / 法人向けへ振り分ける | `personal.html` | `corporate.html`, `diagnosis.html` |
-| `personal.html` | `/personal.html` | 40代以上女性向けの支援を紹介し、無料診断やサロンへつなぐ | `diagnosis.html` | `concept.html`, `salon.html` |
-| `corporate.html` | `/corporate.html` | 企業人事・法人向け支援を説明する | `contact.html` | `#menu`, `results.html` |
-| `about.html` | `/about.html` | プロフィール、資格、信頼材料を伝える | `personal.html` | `corporate.html`, `methods.html` |
-| `concept.html` | `/concept.html` | `じぶん整え習慣` の考え方を説明する | `diagnosis.html` | `salon.html` |
-| `salon.html` | `/salon.html` | サロンの対象、内容、流れ、外部参加導線を説明する | `https://honwaka-llc.com/lp/NYkm7qUC` | `consultation.html`, 決済リンク |
-| `diagnosis.html` | `/diagnosis.html` | 無料診断を説明し、外部診断ページへつなぐ | `https://www.co-co-lab.com/stress-shindan` | `consultation.html`, `salon.html` |
-| `consultation.html` | `/consultation.html` | 無料相談 / 個別相談と予約導線を説明する | `https://www.co-co-lab.com/consultation` | `https://www.co-co-lab.com/book-online` |
-| `methods.html` | `/methods.html` | カラーココロジー研究所と方法論を説明する | `personal.html` | `corporate.html` |
-| `results.html` | `/results.html` | 実績、声、信頼材料を通じて信頼を作る | `diagnosis.html` | `contact.html` |
-| `faq.html` | `/faq.html` | 個人向け / 法人向けのよくある質問に答える | `diagnosis.html` | `contact.html` |
-| `column.html` | `/column.html` | コラム / お知らせの入口を作る | `personal.html` | `corporate.html`, `results.html` |
-| `contact.html` | `/contact.html` | 個人向け / 法人向けの連絡入口をまとめる | `mailto:` | `tel:`, 外部リンク |
+| `index.html` | `/` | ホーム。個人向け / 法人向けへ振り分け、無料診断と問い合わせへつなぐ | 外部無料診断フォーム | `personal.html`, `corporate.html`, `contact.html` |
+| `about.html` | `/about.html` | 竹村英子について。プロフィール、方法論、資格、実績をまとめる | `personal.html` | `corporate.html` |
+| `personal.html` | `/personal.html` | 個人向け支援とじぶん整え習慣サロンを説明する | 外部無料診断フォーム | 外部無料相談フォーム, `./totonoe/` |
+| `corporate.html` | `/corporate.html` | 法人・団体向け研修とメンタルヘルス支援を説明する | `contact.html` | `#menu` |
+| `faq.html` | `/faq.html` | 個人向け / 法人向けのよくある質問に答える | 外部無料診断フォーム | 外部無料相談フォーム, `contact.html` |
+| `contact.html` | `/contact.html` | 問い合わせフォームとメール導線をまとめる | 外部お問い合わせフォーム | `mailto:` |
+| `totonoe/index.html` | `/totonoe/` | じぶん整え習慣サロンLP | LP内無料診断フォーム | LP内無料相談フォーム |
 
 ### ページ完成条件
 
@@ -239,16 +235,9 @@ _project/06_build/site/
 ```text
 ホーム
 竹村英子について
-方法論
 個人の方へ
-じぶん整え習慣
-サロン
-無料診断
-相談
 法人・団体の方へ
-実績・お客様の声
 よくある質問
-コラム / お知らせ
 お問い合わせ
 ```
 
@@ -408,6 +397,7 @@ margin-bottom: 28px;
 | `.space-top-xl` | `28px` | CTA内の下段グリッド |
 
 公開HTMLには `style="margin-top: ..."` のような局所的な見た目指定を残さない。
+ただし `totonoe/index.html` は提供済みLPをスタンドアロン配置したページのため例外扱いにする。LPを本サイトの共通設計へ統合する場合は、インラインstyleをCSSへ整理する。
 
 ### グリッドクラス
 
@@ -443,7 +433,7 @@ margin-bottom: 28px;
 基本形:
 
 ```html
-<a class="btn btn-primary" href="./diagnosis.html">無料診断を見る</a>
+<a class="btn btn-primary" href="https://forms.gle/RboAhF8n61gNSqCeA" target="_blank" rel="noopener noreferrer">無料診断を見る</a>
 ```
 
 | 種類 | クラス | 視覚的役割 | 用途 |
@@ -628,13 +618,14 @@ HTML内で使う外部リンクは、すべてここに記録する。
 
 | 目的 | URL / Scheme | 使用ページ | メモ |
 | --- | --- | --- | --- |
-| 無料診断 | `https://www.co-co-lab.com/stress-shindan` | `diagnosis.html` | 既存の外部診断ページ |
-| 相談ページ | `https://www.co-co-lab.com/consultation` | `consultation.html`, `contact.html` | 既存の外部相談ページ |
-| 予約ページ | `https://www.co-co-lab.com/book-online` | `consultation.html`, `contact.html` | 既存の外部予約ページ |
-| サロン案内 | `https://honwaka-llc.com/lp/NYkm7qUC` | `salon.html`, `contact.html` | 外部サロンLP |
-| サロン参加 / 決済 | `https://honwaka-llc.com/p/r/ZigpisYe` | `salon.html` | 外部参加・決済導線 |
+| じぶん整え診断 | `https://forms.gle/RboAhF8n61gNSqCeA` | `index.html`, `personal.html`, `faq.html` | 無料診断フォーム |
+| 60分無料健康相談 | `https://forms.gle/tAn8GP7ET8DDqXhD8` | `personal.html`, `faq.html` | 無料健康相談フォーム |
+| お問い合わせフォーム | `https://forms.gle/LTE2N4r41x3UzN3E8` | `contact.html` | Googleフォーム |
+| サロンLP | `./totonoe/` | `personal.html`, `faq.html` | サイト内LP |
+| LP内じぶん整え診断 | `https://forms.gle/HfgAPb11Ft913dCNA` | `totonoe/index.html` | 提供LP内の無料診断フォーム |
+| LP内60分健康相談 | `https://forms.gle/FVFoWY1NP4spTYej9` | `totonoe/index.html` | 提供LP内の無料相談フォーム |
+| LP内公式サイトリンク | `https://www.co-co-lab.com/` | `totonoe/index.html` | LPフッターから公式サイトへ |
 | メール | `mailto:dekococoiro@gmail.com` | `contact.html` | 公開連絡先メール |
-| 電話 | `tel:09049094163` | `contact.html` | 公開連絡先電話 |
 
 ### 外部リンクのマークアップ
 
@@ -903,6 +894,8 @@ cd _project/06_build/site
 python3 -m http.server 4173
 ```
 
+PowerShell では `python3`、Git Bash では `python` でも可。
+
 確認幅:
 
 - デスクトップ: 約 `1440px`
@@ -964,9 +957,10 @@ python3 -m http.server 4173
 2. `styles.css` を変更する。
 3. 代表ページを確認する:
    - `index.html`
+   - `about.html`
    - `personal.html`
    - `corporate.html`
-   - `results.html`
+   - `faq.html`
    - `contact.html`
 4. `390px` 幅のモバイル表示を確認する。
 
@@ -989,7 +983,7 @@ python3 -m http.server 4173
 
 - 公開HTMLに制作中表現がない
 - 主要CTAが機能する
-- 実績ページとサロンページに判断材料がある
+- `about.html`、`personal.html`、`corporate.html` に判断材料がある
 - モバイルナビが動く
 - `git diff --check` が通る
 
@@ -1015,7 +1009,7 @@ python3 -m http.server 4173
 - ドメイン設定済み
 - アクセス解析の扱いを決めている
 - フォーム / 予約 / 診断の運用責任が明文化されている
-- コラム / お知らせの更新フローが明文化されている
+- 更新コンテンツを設ける場合は、更新フローが明文化されている
 
 ---
 
@@ -1050,7 +1044,7 @@ TECHNICAL.md と DESIGN.md を使用してください。サイトは静的HTML/
 ### コンポーネント修正
 
 ```text
-共有CSSは保守的に修正してください。先にクラスの利用箇所を検索してください。980pxと720pxのレスポンシブ挙動を維持してください。index、personal、corporate、results、contactを代表ページとして確認してください。
+共有CSSは保守的に修正してください。先にクラスの利用箇所を検索してください。980pxと720pxのレスポンシブ挙動を維持してください。index、about、personal、corporate、faq、contactを代表ページとして確認してください。
 ```
 
 ---

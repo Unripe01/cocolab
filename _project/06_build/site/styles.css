@@ -775,12 +775,18 @@ p {
 }
 
 .faq-item p,
-.faq-item ul {
+.faq-item ul,
+.faq-item > div {
   padding: 0 24px 22px;
 }
 
 .faq-item[open] summary {
   color: var(--teal);
+}
+
+.inline-link {
+  color: var(--teal);
+  font-weight: 700;
 }
 
 .contact-list {
