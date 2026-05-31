@@ -675,7 +675,7 @@ HTTP(S) の外部リンク:
 
 | アセット | サイズ | 用途 | メモ |
 | --- | ---: | --- | --- |
-| `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | 既存トーンに合わせたSVG favicon |
+| `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | `ロゴ_マーク.png` からハートマークを切り出したSVG favicon |
 | `assets/logo-cocolab-wordmark.png` | `1537 x 355` | ヘッダー / フッターロゴ | 優先ロゴ |
 | `assets/logo-horizontal-v2.png` | `1959 x 803` | 旧ヘッダー / フッターロゴ予備 | 意図的に削除するまで保持 |
 | `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
