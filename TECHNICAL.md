@@ -96,6 +96,7 @@ _project/06_build/site/
   script.js
   assets/
     favicon.svg
+    logo-cocolab-wordmark.png
     logo-horizontal-v2.png
     logo-horizontal.jpg
     communicare-card.jpg
@@ -213,7 +214,7 @@ _project/06_build/site/
 <header class="site-header">
   <div class="site-shell header-inner">
     <a class="brand" href="./index.html" aria-label="竹村英子 ホームへ">
-      <img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
+      <img src="./assets/logo-cocolab-wordmark.png" alt="カラーココロジー研究所 ロゴ" />
       <span class="brand-copy">
         <span class="brand-title">竹村英子</span>
         <span class="brand-sub">color cocology laboratory</span>
@@ -671,7 +672,8 @@ HTTP(S) の外部リンク:
 | アセット | サイズ | 用途 | メモ |
 | --- | ---: | --- | --- |
 | `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | 既存トーンに合わせたSVG favicon |
-| `assets/logo-horizontal-v2.png` | `1959 x 803` | ヘッダー / フッターロゴ | 優先ロゴ |
+| `assets/logo-cocolab-wordmark.png` | `1537 x 355` | ヘッダー / フッターロゴ | 優先ロゴ |
+| `assets/logo-horizontal-v2.png` | `1959 x 803` | 旧ヘッダー / フッターロゴ予備 | 意図的に削除するまで保持 |
 | `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
 | `assets/communicare-card.jpg` | `960 x 720` | トップページのコミュニケアカード写真 | LP用写真から複製 |
 | `assets/voice-tf-pink.png` | `196 x 196` | 個人ページお客様の声アイコン | T.Fさん用 |
@@ -702,7 +704,7 @@ HTTP(S) の外部リンク:
 ロゴ:
 
 ```html
-<img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
+<img src="./assets/logo-cocolab-wordmark.png" alt="カラーココロジー研究所 ロゴ" />
 ```
 
 プロフィール写真:

@@ -55,6 +55,8 @@
 ### ブランド資産
 
 - `_project/01_source_materials/brand-assets/ロゴHeart_tate_pink.jpg`
+- `_project/01_source_materials/brand-assets/ロゴ_マーク.png`
+- `_project/01_source_materials/brand-assets/ロゴ_社名.png`
 - `_project/01_source_materials/brand-assets/ロゴtate_P&P.jpg`
 - `_project/01_source_materials/brand-assets/ロゴtate_P&BK.jpg`
 - `_project/01_source_materials/brand-assets/ロゴ横_P&P.jpg`

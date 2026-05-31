@@ -110,8 +110,8 @@ button {
 }
 
 .brand img {
-  width: 230px;
-  max-width: 44vw;
+  width: 270px;
+  max-width: 58vw;
   object-fit: contain;
 }
 
@@ -911,7 +911,7 @@ p {
 }
 
 .footer-brand img {
-  width: 240px;
+  width: 280px;
 }
 
 .footer-links {
@@ -1025,7 +1025,7 @@ p {
   }
 
   .brand img {
-    width: 188px;
+    width: 220px;
   }
 
   .hero {
