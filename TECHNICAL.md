@@ -106,6 +106,10 @@ _project/06_build/site/
     corporate-training-03.jpg
     qualification-one-logo.jpg
     qualification-rokumei-logo.jpg
+    home-hideko-farm.jpg
+    home-daily-onions.jpg
+    home-daily-vegetables.jpg
+    home-daily-carrots.jpg
     voice-tf-pink.png
     voice-mk-blue.png
     voice-mh-green.png
@@ -688,6 +692,10 @@ HTTP(S) の外部リンク:
 | `assets/corporate-training-03.jpg` | `1200 x 828` | 法人ページ研修風景ギャラリー | `企業研修風景６.JPG` を明るめに補正 |
 | `assets/qualification-one-logo.jpg` | `1186 x 414` | About資格セクション | ONE横長ロゴを採用 |
 | `assets/qualification-rokumei-logo.jpg` | `875 x 230` | About資格セクション | 六命健康法の横長ロゴを採用 |
+| `assets/home-hideko-farm.jpg` | `1200 x 900` | トップページ竹村英子紹介 | 畑の写真をWeb最適化 |
+| `assets/home-daily-onions.jpg` | `900 x 675` | トップページ趣味・日常セクション | 玉ねぎ写真をWeb最適化 |
+| `assets/home-daily-vegetables.jpg` | `900 x 675` | トップページ趣味・日常セクション | 季節野菜写真をWeb最適化 |
+| `assets/home-daily-carrots.jpg` | `900 x 675` | トップページ趣味・日常セクション | にんじん写真をWeb最適化 |
 | `assets/voice-tf-pink.png` | `196 x 196` | 個人ページお客様の声アイコン | T.Fさん用 |
 | `assets/voice-mk-blue.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Kさん用 |
 | `assets/voice-mh-green.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Hさん用 |

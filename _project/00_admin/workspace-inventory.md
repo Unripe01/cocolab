@@ -73,6 +73,12 @@
 - `_project/01_source_materials/photos/corporate-training/企業研修風景５.JPG`
 - `_project/01_source_materials/photos/corporate-training/企業研修風景６.JPG`
 - `_project/01_source_materials/photos/corporate-training/企業研修風景無人.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子についてのトップ.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子についてのトップ２.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子について野菜１.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子について野菜２.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子について野菜３.jpg`
+- `_project/01_source_materials/photos/home-daily-life/竹村英子＿個人の方のページ.jpg`
 
 ### 過去販促・過去展開
 

@@ -496,6 +496,57 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.profile-highlight,
+.daily-life-layout {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.profile-highlight {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+}
+
+.profile-highlight-photo,
+.daily-photo {
+  overflow: hidden;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid rgba(90, 69, 50, 0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.profile-highlight-photo img,
+.daily-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.daily-life-layout {
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  align-items: stretch;
+}
+
+.daily-life-layout .panel {
+  align-content: start;
+}
+
+.daily-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-content: start;
+}
+
+.daily-photo:first-child {
+  grid-column: 1 / -1;
+}
+
 .qualification-logo-strip {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1037,6 +1088,8 @@ p {
 
   .hero-grid,
   .story-shell,
+  .profile-highlight,
+  .daily-life-layout,
   .page-banner-grid,
   .split-columns,
   .route-grid,
@@ -1048,6 +1101,7 @@ p {
   .metric-grid,
   .info-grid,
   .proof-grid,
+  .daily-photo-grid,
   .qualification-logo-strip,
   .training-gallery,
   .photo-strip,
@@ -1094,7 +1148,7 @@ p {
   }
 
   .hero .hero-title {
-    font-size: clamp(2.1rem, 11vw, 3.1rem);
+    font-size: clamp(1.85rem, 9vw, 2.55rem);
   }
 
   .route-card,
