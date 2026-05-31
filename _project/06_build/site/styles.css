@@ -1000,6 +1000,14 @@ p {
     height: 280px;
   }
 
+  .photo-strip figure:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .photo-strip img {
+    min-height: 320px;
+  }
+
   .halo-card {
     position: static;
     margin-top: 16px;
