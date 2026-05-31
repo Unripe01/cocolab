@@ -629,6 +629,37 @@ p {
   font-size: 0.86rem;
 }
 
+.training-hero-frame,
+.training-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-strong);
+  box-shadow: var(--shadow-soft);
+}
+
+.training-hero-frame {
+  aspect-ratio: 3 / 2;
+}
+
+.training-hero-frame img,
+.training-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.training-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.training-gallery figure {
+  aspect-ratio: 1.45 / 1;
+}
+
 .photo-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -793,7 +824,8 @@ p {
   padding: 0;
 }
 
-.page-banner-card--photo .portrait-frame {
+.page-banner-card--photo .portrait-frame,
+.page-banner-card--photo .training-hero-frame {
   box-shadow: var(--shadow-soft);
 }
 
@@ -989,6 +1021,7 @@ p {
   .metric-grid,
   .info-grid,
   .proof-grid,
+  .training-gallery,
   .photo-strip,
   .cta-split .footer-grid {
     grid-template-columns: 1fr;

@@ -62,6 +62,13 @@
 - `_project/01_source_materials/brand-assets/ロゴ横_P&P.jpg`
 - `_project/01_source_materials/brand-assets/ロゴ横_p&BK.jpg`
 - `_project/01_source_materials/photos/【プロフィール】半身写真.jpg`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景１トップ.jfif`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景２.JPG`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景３.JPG`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景４.jpg`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景５.JPG`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景６.JPG`
+- `_project/01_source_materials/photos/corporate-training/企業研修風景無人.jpg`
 
 ### 過去販促・過去展開
 

@@ -100,6 +100,10 @@ _project/06_build/site/
     logo-horizontal-v2.png
     logo-horizontal.jpg
     communicare-card.jpg
+    corporate-training-hero.jpg
+    corporate-training-01.jpg
+    corporate-training-02.jpg
+    corporate-training-03.jpg
     voice-tf-pink.png
     voice-mk-blue.png
     voice-mh-green.png
@@ -676,6 +680,10 @@ HTTP(S) の外部リンク:
 | `assets/logo-horizontal-v2.png` | `1959 x 803` | 旧ヘッダー / フッターロゴ予備 | 意図的に削除するまで保持 |
 | `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
 | `assets/communicare-card.jpg` | `960 x 720` | トップページのコミュニケアカード写真 | LP用写真から複製 |
+| `assets/corporate-training-hero.jpg` | `1536 x 1024` | 法人ページトップ研修写真 | `企業研修風景１トップ.jfif` を明るめに補正 |
+| `assets/corporate-training-01.jpg` | `1200 x 828` | 法人ページ研修風景ギャラリー | `企業研修風景２.JPG` を明るめに補正 |
+| `assets/corporate-training-02.jpg` | `845 x 583` | 法人ページ研修風景ギャラリー | `企業研修風景４.jpg` を明るめに補正 |
+| `assets/corporate-training-03.jpg` | `1200 x 828` | 法人ページ研修風景ギャラリー | `企業研修風景６.JPG` を明るめに補正 |
 | `assets/voice-tf-pink.png` | `196 x 196` | 個人ページお客様の声アイコン | T.Fさん用 |
 | `assets/voice-mk-blue.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Kさん用 |
 | `assets/voice-mh-green.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Hさん用 |
