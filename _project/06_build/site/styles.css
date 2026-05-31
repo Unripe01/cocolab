@@ -276,6 +276,15 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero .hero-title {
+  font-size: clamp(2.45rem, 5vw, 4.4rem);
+}
+
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: 0;
@@ -1013,6 +1022,10 @@ p {
 
   .hero {
     padding-top: 42px;
+  }
+
+  .hero .hero-title {
+    font-size: clamp(2.1rem, 11vw, 3.1rem);
   }
 
   .route-card,
