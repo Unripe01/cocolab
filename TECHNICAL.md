@@ -96,9 +96,12 @@ _project/06_build/site/
   script.js
   assets/
     favicon.svg
-    logo-horizontal.jpg
     logo-horizontal-v2.png
+    logo-horizontal.jpg
     communicare-card.jpg
+    voice-tf-pink.png
+    voice-mk-blue.png
+    voice-mh-green.png
     profile.jpg
     salon-flyer.jpg
     generated/
@@ -210,7 +213,7 @@ _project/06_build/site/
 <header class="site-header">
   <div class="site-shell header-inner">
     <a class="brand" href="./index.html" aria-label="竹村英子 ホームへ">
-      <img src="./assets/logo-horizontal.jpg" alt="カラーココロジー研究所 ロゴ" />
+      <img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
       <span class="brand-copy">
         <span class="brand-title">竹村英子</span>
         <span class="brand-sub">color cocology laboratory</span>
@@ -668,9 +671,12 @@ HTTP(S) の外部リンク:
 | アセット | サイズ | 用途 | メモ |
 | --- | ---: | --- | --- |
 | `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | 既存トーンに合わせたSVG favicon |
-| `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | ヘッダー / フッターロゴ | 第2版で使用する優先ロゴ |
-| `assets/logo-horizontal-v2.png` | `1959 x 803` | 旧ロゴ予備 | 意図的に削除するまで保持 |
+| `assets/logo-horizontal-v2.png` | `1959 x 803` | ヘッダー / フッターロゴ | 優先ロゴ |
+| `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
 | `assets/communicare-card.jpg` | `960 x 720` | トップページのコミュニケアカード写真 | LP用写真から複製 |
+| `assets/voice-tf-pink.png` | `196 x 196` | 個人ページお客様の声アイコン | T.Fさん用 |
+| `assets/voice-mk-blue.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Kさん用 |
+| `assets/voice-mh-green.png` | `196 x 196` | 個人ページお客様の声アイコン | M.Hさん用 |
 | `assets/profile.jpg` | `2048 x 3071` | プロフィール・人物写真 | プロフィール写真由来 |
 | `assets/salon-flyer.jpg` | `1414 x 2000` | サロン案内チラシ | BtoCチラシ由来 |
 | `assets/generated/visual-balance-color-wellness.png` | `1920 x 1080` | トップページヒーロー背景 | 薄い背景補助として使用 |
@@ -696,7 +702,7 @@ HTTP(S) の外部リンク:
 ロゴ:
 
 ```html
-<img src="./assets/logo-horizontal.jpg" alt="カラーココロジー研究所 ロゴ" />
+<img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
 ```
 
 プロフィール写真:
