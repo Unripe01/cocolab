@@ -855,8 +855,10 @@ p {
 }
 
 .voice-card {
+  display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
+  gap: 16px;
 }
 
 .voice-icon {
@@ -975,11 +977,11 @@ p {
   .support-paths,
   .pillar-grid,
   .menu-grid,
-    .metric-grid,
-    .info-grid,
-    .proof-grid,
-    .photo-strip,
-    .cta-split .footer-grid {
+  .metric-grid,
+  .info-grid,
+  .proof-grid,
+  .photo-strip,
+  .cta-split .footer-grid {
     grid-template-columns: 1fr;
   }
 
