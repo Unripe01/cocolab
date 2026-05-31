@@ -496,6 +496,33 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.qualification-logo-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.qualification-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 132px;
+  margin: 0;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: var(--shadow-soft);
+}
+
+.qualification-logo img {
+  width: 100%;
+  max-width: 420px;
+  max-height: 96px;
+  object-fit: contain;
+}
+
 .route-card,
 .value-card,
 .pillar-card,
@@ -1021,6 +1048,7 @@ p {
   .metric-grid,
   .info-grid,
   .proof-grid,
+  .qualification-logo-strip,
   .training-gallery,
   .photo-strip,
   .cta-split .footer-grid {

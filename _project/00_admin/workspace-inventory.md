@@ -61,6 +61,10 @@
 - `_project/01_source_materials/brand-assets/ロゴtate_P&BK.jpg`
 - `_project/01_source_materials/brand-assets/ロゴ横_P&P.jpg`
 - `_project/01_source_materials/brand-assets/ロゴ横_p&BK.jpg`
+- `_project/01_source_materials/brand-assets/qualification-logos/ロゴ_ONE横_英字_カラー.jpg`
+- `_project/01_source_materials/brand-assets/qualification-logos/ロゴ_ONE縦_英字_カラー.jpg`
+- `_project/01_source_materials/brand-assets/qualification-logos/ロゴ＿六命健康法バナーjpg.jpg`
+- `_project/01_source_materials/brand-assets/qualification-logos/ロゴ＿六命健康法バナー＿横長.jpg`
 - `_project/01_source_materials/photos/【プロフィール】半身写真.jpg`
 - `_project/01_source_materials/photos/corporate-training/企業研修風景１トップ.jfif`
 - `_project/01_source_materials/photos/corporate-training/企業研修風景２.JPG`
