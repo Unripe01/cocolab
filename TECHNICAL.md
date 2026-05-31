@@ -84,6 +84,7 @@ _project/06_build/site/
   corporate.html
   faq.html
   contact.html
+  privacy.html
   totonoe/
     index.html
     card_photo.jpg
@@ -97,6 +98,7 @@ _project/06_build/site/
     favicon.svg
     logo-horizontal.jpg
     logo-horizontal-v2.png
+    communicare-card.jpg
     profile.jpg
     salon-flyer.jpg
     generated/
@@ -141,12 +143,13 @@ _project/06_build/site/
 
 | ページ | URL | 主な役割 | 主CTA | 補助CTA |
 | --- | --- | --- | --- | --- |
-| `index.html` | `/` | ホーム。個人向け / 法人向けへ振り分け、無料診断と問い合わせへつなぐ | 外部無料診断フォーム | `personal.html`, `corporate.html`, `contact.html` |
-| `about.html` | `/about.html` | 竹村英子について。プロフィール、方法論、資格、実績をまとめる | `personal.html` | `corporate.html` |
-| `personal.html` | `/personal.html` | 個人向け支援とじぶん整え習慣サロンを説明する | 外部無料診断フォーム | 外部無料相談フォーム, `./totonoe/` |
+| `index.html` | `/` | ホーム。第2版コピー、竹村英子紹介、共感ゾーン、個人向け / 法人向け、色彩心理コミュニケアをまとめる | 外部無料診断フォーム | `personal.html`, `corporate.html`, `contact.html` |
+| `about.html` | `/about.html` | 竹村英子について。想い、日々の暮らし、プロフィール詳細、資格、主な活動実績をまとめる | `personal.html` | `corporate.html` |
+| `personal.html` | `/personal.html` | 個人向け支援、6つの生活習慣、じぶん整え習慣サロンを説明する | 外部無料診断フォーム | 外部無料相談フォーム, `./totonoe/` |
 | `corporate.html` | `/corporate.html` | 法人・団体向け研修とメンタルヘルス支援を説明する | `contact.html` | `#menu` |
 | `faq.html` | `/faq.html` | 個人向け / 法人向けのよくある質問に答える | 外部無料診断フォーム | 外部無料相談フォーム, `contact.html` |
 | `contact.html` | `/contact.html` | 問い合わせフォームとメール導線をまとめる | 外部お問い合わせフォーム | `mailto:` |
+| `privacy.html` | `/privacy.html` | プライバシーポリシー。個人情報、Googleフォーム、第三者提供、お問い合わせ先を明示する | `contact.html` | `mailto:` |
 | `totonoe/index.html` | `/totonoe/` | じぶん整え習慣サロンLP | LP内無料診断フォーム | LP内無料相談フォーム |
 
 ### ページ完成条件
@@ -207,7 +210,7 @@ _project/06_build/site/
 <header class="site-header">
   <div class="site-shell header-inner">
     <a class="brand" href="./index.html" aria-label="竹村英子 ホームへ">
-      <img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
+      <img src="./assets/logo-horizontal.jpg" alt="カラーココロジー研究所 ロゴ" />
       <span class="brand-copy">
         <span class="brand-title">竹村英子</span>
         <span class="brand-sub">color cocology laboratory</span>
@@ -625,8 +628,9 @@ HTML内で使う外部リンクは、すべてここに記録する。
 | サロンLP | `./totonoe/` | `personal.html`, `faq.html` | サイト内LP |
 | LP内じぶん整え診断 | `https://forms.gle/HfgAPb11Ft913dCNA` | `totonoe/index.html` | 提供LP内の無料診断フォーム |
 | LP内60分健康相談 | `https://forms.gle/FVFoWY1NP4spTYej9` | `totonoe/index.html` | 提供LP内の無料相談フォーム |
-| LP内公式サイトリンク | `https://www.co-co-lab.com/` | `totonoe/index.html` | LPフッターから公式サイトへ |
-| メール | `mailto:dekococoiro@gmail.com` | `contact.html` | 公開連絡先メール |
+| 公式サイトURL | `https://www.co-co-lab.com/` | `privacy.html`, `totonoe/index.html` | プライバシーポリシー記載とLPフッター |
+| Googleプライバシーポリシー | `https://policies.google.com/privacy` | `privacy.html` | Googleフォーム利用説明 |
+| メール | `mailto:dekococoiro@gmail.com` | `contact.html`, `privacy.html`, `totonoe/index.html` | 公開連絡先メール |
 
 ### 外部リンクのマークアップ
 
@@ -664,8 +668,9 @@ HTTP(S) の外部リンク:
 | アセット | サイズ | 用途 | メモ |
 | --- | ---: | --- | --- |
 | `assets/favicon.svg` | `64 x 64` | ブラウザタブ / ブックマーク | 既存トーンに合わせたSVG favicon |
-| `assets/logo-horizontal-v2.png` | `1959 x 803` | ヘッダー / フッターロゴ | 優先ロゴ |
-| `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | 旧ロゴ予備 | 意図的に削除するまで保持 |
+| `assets/logo-horizontal.jpg` | 現在の `file` 出力では寸法不明 | ヘッダー / フッターロゴ | 第2版で使用する優先ロゴ |
+| `assets/logo-horizontal-v2.png` | `1959 x 803` | 旧ロゴ予備 | 意図的に削除するまで保持 |
+| `assets/communicare-card.jpg` | `960 x 720` | トップページのコミュニケアカード写真 | LP用写真から複製 |
 | `assets/profile.jpg` | `2048 x 3071` | プロフィール・人物写真 | プロフィール写真由来 |
 | `assets/salon-flyer.jpg` | `1414 x 2000` | サロン案内チラシ | BtoCチラシ由来 |
 | `assets/generated/visual-balance-color-wellness.png` | `1920 x 1080` | トップページヒーロー背景 | 薄い背景補助として使用 |
@@ -691,7 +696,7 @@ HTTP(S) の外部リンク:
 ロゴ:
 
 ```html
-<img src="./assets/logo-horizontal-v2.png" alt="カラーココロジー研究所 ロゴ" />
+<img src="./assets/logo-horizontal.jpg" alt="カラーココロジー研究所 ロゴ" />
 ```
 
 プロフィール写真:
