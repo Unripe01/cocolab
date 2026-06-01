@@ -450,6 +450,19 @@ p {
   aspect-ratio: 0.98 / 1.08;
 }
 
+.portrait-frame--farm-top {
+  aspect-ratio: 4 / 3;
+}
+
+.about-farm-photo {
+  filter: brightness(1.04) contrast(0.98) saturate(0.98);
+  object-position: center center;
+}
+
+.page-banner-card--farm .portrait-frame {
+  margin: 0;
+}
+
 .halo-card {
   position: absolute;
   right: 20px;
@@ -533,6 +546,14 @@ p {
 
 .profile-highlight {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+}
+
+.profile-highlight--summary {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.profile-highlight--summary > .stack {
+  max-width: 760px;
 }
 
 .profile-highlight-photo,
