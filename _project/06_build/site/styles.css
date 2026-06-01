@@ -459,12 +459,25 @@ p {
   aspect-ratio: 4 / 3;
 }
 
+.portrait-frame--personal-top {
+  aspect-ratio: 4 / 3;
+}
+
 .about-farm-photo {
   filter: brightness(1.04) contrast(0.98) saturate(0.98);
   object-position: center center;
 }
 
+.personal-hero-photo {
+  filter: brightness(1.08) contrast(1.02) saturate(1.03);
+  object-position: center 42%;
+}
+
 .page-banner-card--farm .portrait-frame {
+  margin: 0;
+}
+
+.page-banner-card--personal .portrait-frame {
   margin: 0;
 }
 
