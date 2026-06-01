@@ -677,6 +677,49 @@ p {
   background: rgba(255, 255, 255, 0.84);
 }
 
+.pillar-grid .pillar-card {
+  min-height: 112px;
+  align-content: center;
+  place-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.pillar-grid .pillar-card h3 {
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.3vw, 1.85rem);
+}
+
+.pillar-grid .pillar-card:nth-child(1) {
+  border-color: rgba(168, 79, 89, 0.34);
+  background: linear-gradient(135deg, rgba(255, 229, 235, 0.96), rgba(255, 247, 243, 0.93));
+}
+
+.pillar-grid .pillar-card:nth-child(2) {
+  border-color: rgba(108, 141, 82, 0.36);
+  background: linear-gradient(135deg, rgba(226, 242, 211, 0.95), rgba(248, 252, 241, 0.93));
+}
+
+.pillar-grid .pillar-card:nth-child(3) {
+  border-color: rgba(79, 126, 168, 0.34);
+  background: linear-gradient(135deg, rgba(219, 238, 249, 0.95), rgba(245, 250, 253, 0.93));
+}
+
+.pillar-grid .pillar-card:nth-child(4) {
+  border-color: rgba(132, 104, 164, 0.33);
+  background: linear-gradient(135deg, rgba(233, 223, 246, 0.95), rgba(250, 247, 253, 0.93));
+}
+
+.pillar-grid .pillar-card:nth-child(5) {
+  border-color: rgba(188, 139, 54, 0.34);
+  background: linear-gradient(135deg, rgba(255, 238, 199, 0.95), rgba(255, 250, 237, 0.93));
+}
+
+.pillar-grid .pillar-card:nth-child(6) {
+  border-color: rgba(53, 93, 99, 0.34);
+  background: linear-gradient(135deg, rgba(215, 239, 238, 0.95), rgba(244, 251, 250, 0.93));
+}
+
 .card-icon {
   justify-self: center;
   width: 88px;
